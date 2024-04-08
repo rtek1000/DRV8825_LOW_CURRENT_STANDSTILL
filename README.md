@@ -14,6 +14,8 @@ To avoid overheating the stepper motor
 
 ![img](https://raw.githubusercontent.com/rtek1000/DRV8825_LOW_CURRENT_STANDSTILL/main/DRV8825_board_schematic.jpg)
 
+![img](https://raw.githubusercontent.com/rtek1000/DRV8825_LOW_CURRENT_STANDSTILL/main/DOH.jpg)
+
 ------
 
 Hardware:
