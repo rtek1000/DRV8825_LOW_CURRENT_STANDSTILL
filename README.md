@@ -1,2 +1,6 @@
 # DRV8825_LOW_CURRENT_STANDSTILL
 To avoid overheating the stepper motor
+
+- Based on the operation of the TMC2209 driver, it is possible to reduce the stepper motor standby current using the DRV8825 driver. To do this, it is necessary to interact with the reference voltage that the potentiometer produces for the DRV8825.
+
+- One possibility is to use a 2N7000 transistor, which works well in this case.
