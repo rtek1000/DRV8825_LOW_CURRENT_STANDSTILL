@@ -6,3 +6,9 @@ To avoid overheating the stepper motor
 - One possibility is to use a 2N7000 transistor, which works well in this case.
 
 ![img](https://raw.githubusercontent.com/rtek1000/DRV8825_LOW_CURRENT_STANDSTILL/main/DRV8825_1.png)
+
+------
+
+Hardware:
+
+Released under CERN OHL 1.2: https://ohwr.org/cernohl
