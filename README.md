@@ -3,6 +3,8 @@ To avoid overheating the stepper motor
 
 - Based on the operation of the TMC2209 driver, it is possible to reduce the stepper motor standby current using the DRV8825 driver. To do this, it is necessary to interact with the reference voltage that the potentiometer produces for the DRV8825. The TMC2209 driver is very attractive, but the DRV8825 is easier to find and cheaper.
 
+- Note: For smaller locking currents it may be necessary to add a capacitor on the Vref line to GND. In tests with around 230mA a 4.7uF capacitor (Tantalum) gave good results, on the other hand there was a delay in the Vref voltage rise, perhaps around 5ms after releasing the HOLD command.
+
 - One possibility is to use a 2N7000 transistor, which works well in this case.
 
 - Regarding the software, it may be necessary to add time after deactivating the HOLD function, to avoid losing steps. For example, for the STEP command to automatically deactivate the HOLD function:
