@@ -5,7 +5,7 @@ To avoid overheating the stepper motor
 
 - - One possibility is to use a 2N7000 transistor, which works well in this case.
 
-- Note: For smaller "StandStill" currents it may be necessary to add a capacitor on the Vref line to GND. In tests with around 230mA (115mV) a 4.7uF capacitor (Tantalum) gave good results, on the other hand there was a delay in the Vref voltage rise, perhaps around 5ms after releasing the HOLD command.
+- Note: For smaller “StandStill” currents it may be necessary to add a capacitor on the Vref line to GND. In tests with around 230mA (115mV) of standby current, a 4.7uF capacitor (Tantalum) gave good results, on the other hand there was a delay in the rise of the Vref voltage (until reaching 350mV), perhaps around 5ms after releasing the HOLD command.
 
 - Regarding the software, it may be necessary to add time after deactivating the HOLD function, to avoid losing steps. For example, for the STEP command to automatically deactivate the HOLD function:
 (Tested with PIC and MPLABX, that's why it has this '_Bool' instead of the Arduino 'bool')
