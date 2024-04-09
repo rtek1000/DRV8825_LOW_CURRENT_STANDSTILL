@@ -50,7 +50,7 @@ _Bool DRV8825_step(void) {
 
 ------
 
-- Another thing is about the driver adjustment current. It is not necessary to adjust the driver to the maximum motor current, as some users teach on the Internet. The current can be much lower as long as steps are not being lost. Carry out tests before making it definitive. For example, a 1.6A (1600mA) motor worked very well with just 700mA.
+- Another thing is about the driver adjustment current. It is not necessary to adjust the driver to the maximum motor current, as some users teach on the Internet. The current can be much lower as long as steps are not being lost. Carry out tests before making it definitive. For example, in my application, a 1.6A (1600mA) motor worked very well with just 700mA.
 
 ------
 
