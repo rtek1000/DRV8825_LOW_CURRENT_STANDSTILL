@@ -47,6 +47,11 @@ _Bool DRV8825_step(void) {
 
 ![img](https://raw.githubusercontent.com/rtek1000/DRV8825_LOW_CURRENT_STANDSTILL/main/DOH.jpg)
 
+
+------
+
+- Another thing is about the driver adjustment current. It is not necessary to adjust the driver to the maximum motor current, as some users teach on the Internet. The current can be much lower as long as steps are not being lost. Carry out tests before making it definitive. For example, a 1.6A (1600mA) motor worked very well with just 700mA.
+
 ------
 
 Hardware:
