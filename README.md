@@ -42,7 +42,7 @@ _Bool DRV8825_step(void) {
 
 - The TMC2209 datasheet speaks of a standby current of approximately 1/3 of the nominal step current. I tried to use a lower current (1/4), but it seems that 1/3 is necessary, below that, a power outage may occur. This is considering that the motor is 1.6A, but the adjusted step current is 700mA, and the 1/3 current of 700mA is about 230mA. In other words, the standby current is not necessarily 1/3 of the motor's nominal current, which would be around 530mA; instead it worked with only around 230mA.
 
-![img](https://raw.githubusercontent.com/rtek1000/DRV8825_LOW_CURRENT_STANDSTILL/main/DRV8825_1.png)
+![img](https://raw.githubusercontent.com/rtek1000/DRV8825_LOW_CURRENT_STANDSTILL/main/DRV8825_2.png)
 
 
 ![img](https://raw.githubusercontent.com/rtek1000/DRV8825_LOW_CURRENT_STANDSTILL/main/DRV8825.png)
